@@ -5,14 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./style/style.css" rel="stylesheet" type="text/css">
-    <script src='https://kit.fontawesome.com/c8e2b99a17.js' crossorigin='anonymous'></script>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap" rel="stylesheet">
     <title>LoginPage</title>
 </head>
 
 <body>
     <header>
-        <i class="fas fa-cat"></i>
+        <img src="./img/dflat-logo.png" />
     </header>
 
     <div class="login-to-continue">
@@ -24,19 +23,22 @@
 
         <div class="loginBox">
             <form id="login_form" method="post">
-                <input id="email" class="form-control" name="email" type="text" placeholder="이메일" autocapitalize="off"
-                    required autofocus />
+                <input id="email" class="form-control" name="email" type="text" placeholder="Email adress or username"
+                    autocapitalize="off" autocomplete="off" autofocus="autofocus" required autofocus />
                 <!--required 메시지 자바스크립트에서 빼줘야함 .attr("required",false)-->
                 <label for="email" role="status" aria-live="polite" class="lable">이메일을 입력하세요.</label>
-                <input id="password" name="password" class="form-control" type="password" placeholder="비밀번호"
+                <input id="password" name="password" class="form-control" type="password" placeholder="password"
                     autocapitalize="off" required />
                 <label for="password" role="status" aria-live="polite" class="lable">비밀번호를 입력하세요.</label>
 
-                <labe for="rememberMe">
-                    <input type="checkbox" name="rememberMe" value="rememberMe" id="rememberMe" checked>
-                    <p>Remember Me!</p>
-                    <span class="control-indicator"></span>
-                </labe>
+                <div class="checkbox">
+                    <input type="checkbox" name="rememberMe" value="rememberMe" id="rememberMe" checked />
+
+                    <labe for="rememberMe" class="remember-me">
+                        <span class="control-indicator">Remember me!</span>
+                    </labe>
+                </div>
+
                 <button id="login-button" class="btn-login" onclick="#">Log In</button>
             </form>
             <div class="loginSetting">
@@ -49,17 +51,21 @@
             </div>
         </div>
 
-        <div class="divider"></div>
 
         <div class="signup">
+
+            <div class="row">
+                <div class="divider"></div>
+            </div>
+
             <p>아직 계정이 없으신가요?</p>
-            <a href="signup.html"><button>Sign up for Dflat</button></a>
+            <button class="signupBtn" href="#">SIGN UP FOR Dflat</button>
         </div>
     </section>
 
     <footer>
-        <p>Sign up, you will be registered and you agree to
-            Terms & Conditions and Privacy Policy.</p>
+        <p>If you sign up, you will be registered and you agree to
+            <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a>.</p>
     </footer>
 
     <script src="js/jquery-3.5.1.min.js"></script>
