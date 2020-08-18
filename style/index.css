@@ -1,0 +1,7 @@
+nav {
+    background-color: #001a00;
+}
+.nav_ul {
+    display: flex;
+    align-items: center;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style/style.css" rel="stylesheet" type="text/css">
+    <script src='https://kit.fontawesome.com/c8e2b99a17.js' crossorigin='anonymous'></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+    <title>LoginPage</title>
+</head>
+
+<body>
+    <header>
+        <i class="fas fa-cat"></i>
+    </header>
+
+    <div class="login-to-continue">
+        <h1>To continue, login to Dflat.</h1>
+    </div>
+
+
+    <section id="section">
+
+        <div class="loginBox">
+            <form id="login_form" method="post">
+                <input id="email" class="form-control" name="email" type="text" placeholder="이메일" autocapitalize="off"
+                    required autofocus />
+                <!--required 메시지 자바스크립트에서 빼줘야함 .attr("required",false)-->
+                <label for="email" role="status" aria-live="polite" class="lable">이메일을 입력하세요.</label>
+                <input id="password" name="password" class="form-control" type="password" placeholder="비밀번호"
+                    autocapitalize="off" required />
+                <label for="password" role="status" aria-live="polite" class="lable">비밀번호를 입력하세요.</label>
+
+                <labe for="rememberMe">
+                    <input type="checkbox" name="rememberMe" value="rememberMe" id="rememberMe" checked>
+                    <p>Remember Me!</p>
+                    <span class="control-indicator"></span>
+                </labe>
+                <button id="login-button" class="btn-login" onclick="#">Log In</button>
+            </form>
+            <div class="loginSetting">
+                <div class="rememberMe">
+
+                </div>
+                <a href="#">
+                    <p>계정 또는 비밀번호 찾기</p>
+                </a>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="signup">
+            <p>아직 계정이 없으신가요?</p>
+            <a href="signup.html"><button>Sign up for Dflat</button></a>
+        </div>
+    </section>
+
+    <footer>
+        <p>Sign up, you will be registered and you agree to
+            Terms & Conditions and Privacy Policy.</p>
+    </footer>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/login.js"></script>
+</body>
+
+</html>
