@@ -68,32 +68,43 @@ form {
 }
 
 .checkbox {
-  color: #919496;
-  font-weight: 400;
+  position: relative;
+  color: #797979;
 }
 
-.checkbox input[type="checkbox"] {
-  display: none;
-}
-
-.remember-me {
+.login-settig {
+  width: 100%;
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.checkbox > input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+  background-color: #ffffff;
+  border: 1px solid #a12e98;
 }
 
 .btn-login {
-  background-color: #566de4;
-  font-weight: bold;
+  background-color: #a12e98;
   font-size: 14px;
+  line-height: 1;
   border-radius: 500px;
   padding: 16px 48px 18px;
+  transition-property: background-color, border-color, color, box-shadow, filter;
+  transition-duration: 0.3s;
   border-width: 0;
   letter-spacing: 2px;
   min-width: 160px;
+  text-transform: uppercase;
+  white-space: normal;
   color: #ffffff;
+  margin-top: 20px;
 }
 
 .btn-login:hover {
-  background-color: #647eff;
+  background-color: #db4acf;
 }
 
 .remember-me > p {
@@ -101,7 +112,7 @@ form {
 }
 
 a {
-  color: #566de4;
+  color: #a12e98;
   text-decoration: none;
 }
 
@@ -119,6 +130,15 @@ a:active {
   text-decoration: none;
 }
 
+.findid > p {
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+a:hover {
+  color: #db4acf;
+}
+
 .signup > p {
   color: #000000;
   font-weight: bold;
@@ -133,6 +153,19 @@ a:active {
   flex-direction: column;
   align-items: center;
   margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+div .signup:after {
+  content: "";
+  display: block;
+  width: 60px;
+  border-top: 1px solid #bcbcbc;
+  margin: 20px auto;
+}
+
+p {
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 
@@ -164,6 +197,7 @@ a:active {
   text-transform: uppercase;
   white-space: normal;
   border: 1.5px solid #5c5c5c;
+  margin-bottom: 30px;
 }
 
 .signupBtn:hover {
@@ -176,6 +210,18 @@ a:active {
   letter-spacing: 2px;
   min-width: 160px;
   color: #ffffff;
+}
+
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.divider {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 footer {

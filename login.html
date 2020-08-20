@@ -11,6 +11,7 @@
 
 <body>
     <header>
+        <!--아이콘에 인덱스 페이지 연결해주기-->
         <img src="./img/dflat-logo.png" />
     </header>
 
@@ -31,33 +32,31 @@
                     autocapitalize="off" required />
                 <label for="password" role="status" aria-live="polite" class="lable">비밀번호를 입력하세요.</label>
 
-                <div class="checkbox">
-                    <input type="checkbox" name="rememberMe" value="rememberMe" id="rememberMe" checked />
+                <div class="login-settig">
+                    <div class="checkbox">
+                        <input type="checkbox" name="rememberMe" value="rememberMe" id="rememberMe" />
+                        <labe for="rememberMe" class="remember-me">
+                            <span></span>
+                            Remember me!
+                        </labe>
+                    </div>
 
-                    <labe for="rememberMe" class="remember-me">
-                        <span class="control-indicator">Remember me!</span>
-                    </labe>
+                    <button id="login-button" class="btn-login" onclick="#">Log In</button>
                 </div>
-
-                <button id="login-button" class="btn-login" onclick="#">Log In</button>
             </form>
-            <div class="loginSetting">
-                <div class="rememberMe">
-
-                </div>
+            <div class="findId">
                 <a href="#">
                     <p>계정 또는 비밀번호 찾기</p>
                 </a>
             </div>
         </div>
 
+        <div class="row">
+            <div class="divider">
+            </div>
+        </div>
 
         <div class="signup">
-
-            <div class="row">
-                <div class="divider"></div>
-            </div>
-
             <p>아직 계정이 없으신가요?</p>
             <button class="signupBtn" href="#">SIGN UP FOR Dflat</button>
         </div>

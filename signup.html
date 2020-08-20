@@ -4,11 +4,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="./style/style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap" rel="stylesheet">
+    <title>signupPage</title>
 </head>
 
 <body>
 
+    <header>
+        <img src="./img/dflat-logo.png" />
+    </header>
+
+    <h1 class="signup-text">Sign up for free start!</h1>
+
+    <container class="container">
+        <h2>이메일 주소로 가입하세요.</h2>
+
+        <form>
+            <div class="input-group">
+                <div class="label-group">
+                    <label for="email" class="label-email">이메일 주소</label>
+                </div>
+                <input id="email" name="email" class="email-input" placeholder="이메일을 입력하세요." pattern="" required
+                    type="email" />
+            </div>
+
+            <div class="input-group">
+                <div class="label-group">
+                    <label for="password" class="label-password">비밀번호</label>
+                </div>
+                <input id="password" name="password" class="password-input" pattern=".{6,}" placeholder="비밀번호를 입력하세요."
+                    required type="password" />
+            </div>
+
+            <div class="input-group">
+                <div class="label-group">
+                    <label for="confirm" class="label-confirm">비밀번호 확인</label>
+                </div>
+                <input id="confirm" name="confirm" class="confirm-input" pattern=".{6,}" placeholder="비밀번호를 다시 입력하세요."
+                    required type="password" />
+            </div>
+
+            <div class="input-group">
+                <div class="label-group">
+                    <label for="name" class="label-name">이름</label>
+                </div>
+                <input id="name" name="name" class="name-input" type="text" placeholder="이름을 입력하세요" required />
+                <div class="on-profile">이름은 프로필에 표시됩니다.</div>
+            </div>
+
+            <div class="birthday-group">
+                <label class="birthday-label">생년월일</label>
+
+                <div class="month">
+                    <label for="month" class="month-label">Month</label>
+                    <select class="month" name="month" value required>
+                        <option disabled value>Month</option>
+                        <option value="01">1월</option>
+                        <option value="02">2월</option>
+                        <option value="03">3월</option>
+                        <option value="04">4월</option>
+                        <option value="05">5월</option>
+                        <option value="06">6월</option>
+                        <option value="07">7월</option>
+                        <option value="08">8월</option>
+                        <option value="09">9월</option>
+                        <option value="10">10월</option>
+                        <option value="11">11월</option>
+                        <option value="12">12월</option>
+                    </select>
+                </div>
+
+                <div class="day">
+                    <label for="day" class="day-label">Day</label>
+                    <input type="text" class="day" name="day" placeholder="DD" />
+                </div>
+
+                <div class="year">
+                    <label for="year" class="year-label">Year</label>
+                    <input type="text" class="year" name="year" placeholder="YYYY" />
+                </div>
+            </div>
+
+            <div class="gender">
+                <label for="gender" class="gender-label">성별</label>
+                <input type="radio" name="gender" id="gender" required value="male" class="gender-male" />
+                <span>남자</span>
+
+                <input type="radio" name="gender" id="gender" required value="female" class="gender-female" />
+                <span>여자</span>
+
+                <input type="radio" name="gender" id="gender" required value="non-binary" class="gender-none" />
+                <span>기타</span>
+            </div>
+
+            <div class="term">
+                <input type="checkbox" />
+                <label class="terms-of-policy"><span>회원가입에 동의하시면 어쩌구저찌구~~응니개인정보우리꺼</span></label>
+            </div>
+            <button type="submit">Sign up</button>
+        </form>
+
+        <div class="already-have-account">
+            <p>이미 계정이 있으신가요? <a href="#">로그인하러가기.</a></p>
+        </div>
+    </container>
+
+
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <script src="./js/signup.js"></script>
 </body>
 
 </html>
