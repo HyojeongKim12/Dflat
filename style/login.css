@@ -15,7 +15,7 @@ header {
   padding-top: 20px;
 }
 
-header > img {
+header>img {
   width: auto;
   height: auto;
   max-width: 200px;
@@ -31,7 +31,7 @@ div {
   justify-content: center;
 }
 
-.login-to-continue > h1 {
+.login-to-continue>h1 {
   font-family: inherit;
   font-size: 17px;
   font-weight: bold;
@@ -79,7 +79,7 @@ form {
   justify-content: space-between;
 }
 
-.checkbox > input[type="checkbox"] {
+.checkbox>input[type="checkbox"] {
   width: 15px;
   height: 15px;
   background-color: #ffffff;
@@ -107,11 +107,11 @@ form {
   background-color: #db4acf;
 }
 
-.remember-me > p {
+.remember-me p {
   color: #858585;
 }
 
-a {
+.findId a {
   color: #a12e98;
   text-decoration: none;
 }
@@ -119,27 +119,30 @@ a {
 a:visited {
   text-decoration: none;
 }
+
 a:hover {
   text-decoration: none;
 }
+
 a:focus {
   text-decoration: none;
 }
+
 a:hover,
 a:active {
   text-decoration: none;
 }
 
-.findid > p {
+.findid>p {
   font-size: 15px;
   margin-top: 20px;
 }
 
-a:hover {
+.findId>a:hover {
   color: #db4acf;
 }
 
-.signup > p {
+.signup>p {
   color: #000000;
   font-weight: bold;
 }
@@ -228,7 +231,7 @@ footer {
   border-top: 1px solid #d9dadc;
 }
 
-footer > p {
+footer>p {
   padding-top: 20px;
   color: #818181;
   font-size: 10px;
