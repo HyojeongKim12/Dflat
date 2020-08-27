@@ -6,49 +6,89 @@
     <link href="./style/style.css" rel="stylesheet" type="text/css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
     <title>index</title>
 </head>
 
 <body>
 
-    <nav class="nav_bar">
-        <a href="./index.html"><img src="./img/logo-white.png"></a>
-        <ul class="nav_ul">
-            <li><a href="#">Dflat?</a></li>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Explore</a></li>
-            <li><a href="#">Login</a></li>
-            <li><a href="#">Logout</a></li>
-        </ul>
-    </nav>
-    <div class="btn_toggle"><i class="fas fa-bars"></i></div>
-    <container id="container">
-        <div class="main-content">
-            <div class="cover">
-                <div class="cover-photo">
-                    <img src="./img/musicpriducer01.jpg">
+    <!--
+       <div class="layer"></div>
+    <div class="layer"></div>
+   -->
+    <div class="layer"></div>
+    <div class="layer"></div>
+    <div class="all">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 p-0">
+                    <nav class="navbar navbar-expand-md position-absolute w-100">
+                        <a class="navbar-brand w-30" href="#"><img class="w-75" src="./img/logo-white.png"
+                                alt="logo" /></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link text-white" href="#">Dfalt?</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="#">Projects</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="#">Explore</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="#">Log-in</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="#">Log-out</a>
+                                </li>
+                            </ul>
+                            <div class="na-toggle"><i class="fas fa-bars"></i></div>
+                        </div>
+                    </nav>
                 </div>
             </div>
-            <div class="contents">
-                <h1>당신의 음악으로</h1>
-                <h1>세상과 만나세요</h1>
+
+            <div class="row">
+                <div class="col-lg-5 col-md-5 col-sm-12 p-0">
+                    <div class="background">
+                        <div class="main-text">
+                            <div class="title">
+                                <h1>당신의 음악으로 세상과 소통하세요</h1>
+                            </div>
+                            <div class="text">
+                                <p class="my-3">
+
+                                </p>
+                            </div>
+                            <h3 class="mb-4 font-weight-bold">내가 만들고싶은 음악은</h3>
+                            <a href="#" class="up_port">음원 올리기</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-md-7 col-sm-12 p-0">
+                        <div class="port">
+                            여기부터 포트폴리오 올라가게 해놓기?
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-
-        <div class="main-category">
-            여기서부터 메인 카테고리
-            <div class="cag-singer">
-            </div>
-
-            <div class="cag-session">
-            </div>
-        </div>
-    </container>
+    </div>
+    </div>
     <footer>
     </footer>
     <script src="./js/jquery-3.5.1.min.js"></script>
     <script src="./js/index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 </body>
 
 </html>
