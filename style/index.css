@@ -29,7 +29,7 @@ body {
     background-color: white;
     z-index: 3;
     animation: layer 1s ease forwards;
-    animation-delay: .5s;
+    animation-delay: 0.5s;
 }
 
 .layer:nth-child(2) {
@@ -50,6 +50,7 @@ body {
 }
 
 /*레이어 설정 끝*/
+
 
 /*백그라운드 이미지 그라데이션*/
 .background img {
@@ -95,7 +96,6 @@ body {
     animation: logo 1s ease forwards;
     animation-delay: 2s;
 }
-
 
 @keyframes logo {
     0% {
@@ -153,17 +153,15 @@ body {
     }
 }
 
-
-
 .navbar-nav .nav-item:after {
-    content: '';
+    content: "";
     position: absolute;
     bottom: 0;
     left: 0;
     width: 0;
     height: 3px;
     background-color: rgb(228, 138, 255);
-    transition: .5s;
+    transition: 0.5s;
 }
 
 .navbar-nav .nav-item:hover:before,
@@ -172,7 +170,7 @@ body {
 }
 
 .navbar-nav .nav-item a {
-    transition: .5s;
+    transition: 0.5s;
 }
 
 .navbar-nav .nav-item a:hover {
@@ -204,7 +202,6 @@ body {
     animation: title 1s ease forwards;
     animation-delay: 3.5s;
 }
-
 
 .main-text .text {
     color: rgb(202, 202, 202);
@@ -276,6 +273,9 @@ a:left {
     }
 }
 
-@media screen and(max-with:){
-    
+@media all and (min-width: 480px) and (max-width: 767px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+    }
 }
